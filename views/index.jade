@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to the webtech lab5 messages API.
+  p You can call the API via: https://messages-api-webtech.herokuapp.com/api/v1/messages
+
+
+  h3 What can I do?
+
+  h5 GET all messages
+  p /api/v1/messages
+
+  h5 GET a specific message by ID
+  p /api/v1/messages/:id
+
+  h5 POST a new message
+  p /api/v1/messages
+  p 
+
+  h6 Update (PUT) a message
+  p /api/v1/messages/:id
+
+  h5 DELETE a messages
+  p /api/v1/messages/:id
+
+  h5 GET all messages from a specific user (user id)
+  p /api/v1/messages?user=username
+  
+
