@@ -29,7 +29,7 @@ let getId = (req, res, next) => {
 
 //POST callback for adding a message
 let post = (req, res, next) => {
-    let user = req.body.user;
+    let user = req.body.message.user;
     res.json({
         "status": "success",
         "message": "POSTING a new message for user: " + user
